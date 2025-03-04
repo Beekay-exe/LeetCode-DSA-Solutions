@@ -18,14 +18,14 @@ public class majorityElement {
             }
 
             // Step 2: Verify the candidate
-            votes = 0;
+            int votes1 = 0;
             for (int num : nums) {
                 if (num == candidate) {
-                    votes++;
+                    votes1++;
                 }
             }
 
-            return votes > (n / 2) ? candidate : -1; // Return candidate if it's a majority
+            return votes1 > (n / 2) ? candidate : -1; // Return candidate if it's a majority
         }
 
 }
